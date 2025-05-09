@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini Agenda de Tareas</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
@@ -13,15 +13,19 @@
     <h1 class="titulo-agenda">📝 Mini Agenda</h1>
   </header>
 
-
   <main>
     <section class="formulario-agenda" aria-label="Formulario para agregar tarea">
       <fieldset>
         <legend>Agregar nueva tarea</legend>
         <label for="nueva-tarea">Tarea:</label>
-        <input type="text" id="nueva-tarea" class="input-tarea" placeholder="Escribe tu próxima tarea aquí...">
+        <input type="text" id="nueva-tarea" class="input-tarea" placeholder="Escribe tu próxima tarea aquí..." />
         <button onclick="agregarTarea()" class="btn-agregar">Agregar</button>
+        <button onclick="eliminarTodasLasTareas()" class="btn-eliminar-todas">Eliminar todas</button>
       </fieldset>
+    </section>
+
+    <section class="busqueda-agenda" aria-label="Buscar tarea">
+      <input type="text" id="buscador-tareas" class="input-busqueda" placeholder="🔍 Buscar tarea..." />
     </section>
 
     <section class="lista-agenda" aria-label="Lista de tareas pendientes">
@@ -30,9 +34,8 @@
   </main>
 
   <footer>
-    <p style="text-align: center; font-size: 0.9em; color: gray;">&copy; 2025 | Agenda creada por PIXEL PIONEERS </p>
+    <p style="text-align: center; font-size: 0.9em; color: gray;">&copy; 2025 | Agenda creada por PIXEL PIONEERS</p>
   </footer>
-
 
   <script src="script.js"></script>
 </body>
